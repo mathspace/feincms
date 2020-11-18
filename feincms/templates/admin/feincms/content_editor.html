@@ -1,10 +1,10 @@
 {% load i18n %}
 {% load feincms_admin_tags %}
-<div id="main_wrapper">
+<div id="main_feincms_wrapper">
     {% for region in original.template.regions %}
         <div class="navi_tab" id="{{ region.key }}_tab">{{ region.title }}</div>
     {% endfor %}
-    <div id="main">
+    <div id="main_feincms">
         {% for region in original.template.regions %}
         <div id="{{ region.key }}_body" class="panel">
             <div class="empty-machine-msg">
